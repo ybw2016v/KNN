@@ -3,6 +3,7 @@ import re
 #import indog
 from indog import shi
 from cal1 import welldog,calone
+from sourse import sdogread
 zhiliang={}
 listdata=[]
 aimdog={}

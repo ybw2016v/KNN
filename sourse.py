@@ -24,8 +24,8 @@ def sdogread():
         lindog.append(hdog[number][0][2])
 
         pdog[hdog[number][0][0]]=lindog
-    print('#')
-    print(pdog)
+    #print('#')
+    #print(pdog)
 
 
 sdogread()
