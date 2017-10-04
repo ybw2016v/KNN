@@ -12,7 +12,7 @@ def sdogread():
             del fline[fline.index(i)]
         else:
             pass
-    print(fline)
+    #print(fline)
     pptdog=re.compile(r'(.*)>(.*)=(.*)')
     for idog in fline:
         hdog.append(pptdog.findall(idog))
@@ -22,10 +22,11 @@ def sdogread():
         number=hdog.index(icat)
         lindog.append(shi(hdog[number][0][1]))
         lindog.append(hdog[number][0][2])
-
+        lindog.append(hdog[number][0][1])
         pdog[hdog[number][0][0]]=lindog
     #print('#')
     #print(pdog)
+    return pdog
 
 
-sdogread()
+print(sdogread())

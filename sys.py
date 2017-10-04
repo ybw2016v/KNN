@@ -4,6 +4,7 @@ import re
 from indog import shi
 from cal1 import welldog,calone
 from sourse import sdogread
+from cal3 import calthree
 zhiliang={}
 listdata=[]
 aimdog={}
@@ -59,7 +60,9 @@ hconf(readconf())
 #hconf(readconf())
 #print(conf)
 #print(shi(indog()))
-shidog=shi(indog())
+shidog=shi(indog())#warn
 print(shidog)
 print(conf)
 print(calone(conf,shidog))
+ans=calthree(sdogread(),shidog,conf)
+print(ans)

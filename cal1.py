@@ -1,7 +1,7 @@
 #python3
 import re
 zhongdog=['Na=23\n', 'H=1\n', 'He=4\n', 'Li=6\n', 'O=16\n','Al=27\n']
-longdog=[('H', '0'), ('Al', '2'), ('Na', '0'), ('O', '3')]
+longdog=[('H', '0'), ('Al', '2'), ('Na', '0'), ('O', '')]
 
 
 def welldog(list1):
