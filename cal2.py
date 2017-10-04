@@ -22,9 +22,10 @@ def caltwo(soupdog,peuodog):
         hherdog.append(h)
         hherdog.append(b)
         hherdog.append(a[2])
+        hherdog.append(a[1])
         derdog[spdog]=hherdog
     return derdog
 
 
 u=caltwo(lepdog,hupdog)
-print(u)
+#print(u)

@@ -41,4 +41,4 @@ def calone(l1dog,l2dog):
 
     return mdog
 
-print(calone(zhongdog,longdog))
+#print(calone(zhongdog,longdog))

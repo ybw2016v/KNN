@@ -24,8 +24,10 @@ def calthree(onedog,twodog,zhongdog):
         c=itedog[0]
         ettdog.append(lldog[c][2])
         ettdog.append(lldog[c][0]*modog*float(itedog[1]))
+        ettdog.append(lldog[c][1])
+        ettdog.append(lldog[c][3])
         ansdog[c]=ettdog
 
     return ansdog
 
-print(calthree(sdogread(),ecpdog,zhongdog))
+#print(calthree(sdogread(),ecpdog,zhongdog))
