@@ -20,9 +20,14 @@ def calthree(onedog,twodog,zhongdog):
             two2dog.append(podog)
     lldog=caltwo(sdogread(),zhongdog)
     for itedog in two2dog:
+        itedog=list(itedog)#将元组更改为列表
         ettdog=[]
         c=itedog[0]
         ettdog.append(lldog[c][2])
+        if itedog[1]=='':
+            itedog[1]=1
+        else:
+            pass
         ettdog.append(lldog[c][0]*modog*float(itedog[1]))
         ettdog.append(lldog[c][1])
         ettdog.append(lldog[c][3])

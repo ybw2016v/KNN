@@ -1,5 +1,6 @@
 #python3
 import re
+from prettytable import PrettyTable
 #import indog
 from indog import shi
 from cal1 import welldog,calone
@@ -11,6 +12,7 @@ aimdog={}
 def start():
     '''启动界面'''
     print("KNN PROGECT")
+    print('<GPLv3>')
 start()
 conf=''
 def readconf():
@@ -65,4 +67,9 @@ shidog=shi(indog())#warn
 # print(conf)
 # print(calone(conf,shidog))
 ans=calthree(sdogread(),shidog,conf)
-print(ans)
+
+table = PrettyTable(["元素", "来源","纯度","质量(g)"])
+for ansdog in ans:
+    table.add_row([ansdog,ans[ansdog][0],ans[ansdog][3],ans[ansdog][1]])
+
+print(table)
