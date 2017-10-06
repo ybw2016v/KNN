@@ -1,5 +1,6 @@
 # KNN
-一个用于计算铌酸钾钠基压电陶瓷配料的自动化工具。
+一个用于计算铌酸钾钠基压电陶瓷配料的自动化工具。<br/>
+`基于python3`
 ### 组成部分
 
 1. `sys.py`主程序
@@ -23,7 +24,7 @@
     或<br/>
     ``git clone https://github.com/ybw2016v/KNN.git``
     6. 结合需要配置`s.conf` `data.conf`
-#### * 运行(Ubuntu)
+* #### 运行(Ubuntu)
 
         cd KNN
         python3 sys.py
