@@ -26,3 +26,4 @@
 * #### 运行(Ubuntu)
         cd KNN
         python3 sys.py
+    * Windows 未测试
