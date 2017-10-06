@@ -23,7 +23,7 @@
     或<br/>
     ``git clone https://github.com/ybw2016v/KNN.git``
     6. 结合需要配置`s.conf` `data.conf`
-* #### 运行(Ubuntu)
+#### * 运行(Ubuntu)
 
         cd KNN
         python3 sys.py
