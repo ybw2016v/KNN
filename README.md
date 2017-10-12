@@ -29,3 +29,6 @@
         cd KNN
         python3 sys.py
     * Windows 未测试
+
+### 示例
+![示例](example.png)
