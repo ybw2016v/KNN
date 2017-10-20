@@ -5,6 +5,7 @@
 
 1. `sys.py`主程序
 2. `indog.py`输入模块
+4. `zjl.py`输入兼容模块
 3. `sourse.py`
 4. `cal1.py`计算模块
 5. `cal2.py`计算模块

@@ -11,6 +11,12 @@ def zjl(namedog):
     ppxdog=re.compile(r'([A-Z][a-z]{0,2})([0-9]{0,}\.{0,}[0-9]{0,})')
     if hhdog==[]:
         hhdog=namedog
+        pptcdog=re.compile(r'([A-Z][a-z]{0,2})([0-9]{0,}\.{0,}[0-9]{0,})')
+        hhdog=pptcdog.findall(hhdog)
+        #print(hhdog)
+        return hhdog
+
+
     else:
         pass
     for idog in hhdog:
@@ -55,23 +61,23 @@ def zjl(namedog):
 
     for oodog in pudog:
         bidog=oodog[0]
-        tiao=pudog.index(oodog)
+        #tiao=pudog.index(oodog)
         for zzdog in pudog:
-            if zzdog[0]==bidog and tiao!=pudog.index(zzdog):
+            if zzdog[0]==bidog and pudog.index(oodog)!=pudog.index(zzdog):
                 oodog[1]=oodog[1]+zzdog[1]
                 pudog.remove(zzdog)
             else:
                 pass
         eedog.append(oodog)
-    print(eedog)
+    #print(eedog)
 
 
-    return hhdog
+    return eedog
 
 
 
 
 #print(
-zjl('(Na0.25K)C3O2+0.75(Na0.25K0.75)C2S2O')
+#zjl('(Na0.25K)C3O2+0.75(Na0.25K0.75)C2S2O')
 #)
 #print(zjl('Na0.25K0.75'))
