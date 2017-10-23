@@ -51,7 +51,7 @@ def zjl(namedog):
                 kdog[1]='1'
             else:
                 pass
-            kdog[1]=float(kdog[1])
+            kdog[1]=numdog*float(kdog[1])
 
 
             havedog4.append(kdog)
@@ -77,7 +77,6 @@ def zjl(namedog):
 
 
 
-#print(
-#zjl('(Na0.25K)C3O2+0.75(Na0.25K0.75)C2S2O')
-#)
+#print(zjl('0.96(K0.48Na0.52Nb0.96Sb0.04)O3+0.04(Bi0.5Na0.5)ZrO3'))
 #print(zjl('Na0.25K0.75'))
+

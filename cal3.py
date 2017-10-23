@@ -6,7 +6,7 @@ from sourse import sdogread
 ecpdog=[('Na', '0.5'), ('O', '')]
 zhongdog=['Na=23\n', 'H=1\n', 'He=4\n', 'Li=6\n', 'O=16\n','Al=27\n','C=12\n','K=39\n']
 def calthree(onedog,twodog,zhongdog):
-    liang=float(25)#配置25克
+    liang=float(35)#配置35克
     print('配置'+str(liang)+'g')
     ttdog=calone(zhongdog,twodog)
     modog=float(liang/ttdog)

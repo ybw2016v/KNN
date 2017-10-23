@@ -6,6 +6,7 @@ from indog import shi
 from cal1 import welldog,calone
 from sourse import sdogread
 from cal3 import calthree
+from post import knnpost
 zhiliang={}
 listdata=[]
 aimdog={}
@@ -62,7 +63,8 @@ hconf(readconf())
 #hconf(readconf())
 #print(conf)
 #print(shi(indog()))
-shidog=shi(indog())#warn
+dogin=indog()
+shidog=shi(dogin)#warn
 # print(shidog)
 # print(conf)
 # print(calone(conf,shidog))
@@ -70,6 +72,13 @@ ans=calthree(sdogread(),shidog,conf)
 
 table = PrettyTable(["元素", "来源","纯度","质量(g)"])
 for ansdog in ans:
-    table.add_row([ansdog,ans[ansdog][0],ans[ansdog][3],ans[ansdog][1]])
+    table.add_row([ansdog,ans[ansdog][0],ans[ansdog][3],("%.4f" % ans[ansdog][1])])
+anslines=dogin+'\n'+str(table)
+print(anslines)
+keydog=input("send the results to KNN?(y/n)")
+if keydog=='y':
+    knnpost(anslines)
+else:
+    pass
 
-print(table)
+
